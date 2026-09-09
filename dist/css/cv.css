@@ -1,0 +1,188 @@
+.cv-page {
+  padding: 2.5rem 1.5rem 3rem;
+}
+
+.cv-toolbar,
+.cv-document,
+.cv-footer {
+  max-width: 46rem;
+  margin-inline: auto;
+}
+
+.cv-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.cv-toolbar button {
+  padding: 0.5rem 0.875rem;
+  border: 1px solid var(--rule);
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+}
+
+.cv-toolbar button:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.cv-toolbar button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.cv-header h1 {
+  font-size: 3rem;
+  letter-spacing: -0.045em;
+}
+
+.cv-summary {
+  max-width: 40rem;
+  margin-top: 1.25rem;
+  color: var(--muted);
+}
+
+.cv-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin-top: 1.25rem;
+  font-size: 0.875rem;
+}
+
+.cv-contacts a {
+  overflow-wrap: anywhere;
+  text-decoration: underline;
+  text-decoration-color: var(--rule);
+}
+
+.cv-section {
+  margin-top: 3rem;
+}
+
+.cv-section > h2 {
+  padding-bottom: 0.65rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--rule);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.cv-section .paper-title {
+  max-width: none;
+  font-family: var(--sans);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.cv-section .authors {
+  margin-top: 0.4rem;
+  font-size: 0.875rem;
+  line-height: 1.65;
+}
+
+.cv-section .authors strong {
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.cv-section .publication-list > li + li {
+  margin-top: 1.5rem;
+}
+
+.cv-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.8125rem;
+}
+
+@page {
+  size: A4;
+  margin: 17mm;
+}
+
+@media print {
+  html {
+    font-size: 10pt;
+  }
+
+  .cv-page {
+    padding: 0;
+    color: #000;
+    line-height: 1.45;
+    --muted: #333;
+  }
+
+  .cv-toolbar,
+  .cv-footer {
+    display: none;
+  }
+
+  .cv-document {
+    max-width: none;
+  }
+
+  .cv-header h1 {
+    font-size: 28pt;
+  }
+
+  .cv-summary {
+    max-width: none;
+    margin-top: 0.75rem;
+  }
+
+  .cv-contacts {
+    margin-top: 0.75rem;
+  }
+
+  .cv-section {
+    margin-top: 1.75rem;
+  }
+
+  .cv-section > h2 {
+    margin-bottom: 1rem;
+    break-after: avoid;
+  }
+
+  .cv-section li {
+    break-inside: avoid;
+  }
+
+  .experience-item + .experience-item,
+  .education-list > li + li,
+  .cv-section .publication-list > li + li {
+    margin-top: 1rem;
+  }
+
+  .experience-title {
+    flex-direction: row;
+  }
+
+  .cv-section .authors {
+    line-height: 1.45;
+  }
+
+  .cv-section .paper-title {
+    font-size: 1rem;
+  }
+
+  a {
+    color: inherit;
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "name": "Silin Meng",
+  "email": "silinmeng@gmail.com",
+  "headline": "Multimodal modeling at Boson AI.",
+  "focus": "Speech, language, and interaction.",
+  "summary": "I work on multimodal models at Boson AI, with an interest in making human–AI communication more natural.",
+  "source_url": "https://www.linkedin.com/in/silin-meng/",
+  "verified_on": "2026-09-09",
+  "experience_approval": {
+    "status": "approved",
+    "approved_on": "2026-09-09",
+    "scope": "Boson AI and UCLA only",
+    "sha256": "d874555b113cad73b742a0441cdfc99f0cd8b78a210891c731d85439e7ce2b4d"
+  },
+  "links": {
+    "github": "https://github.com/SilinMeng0510",
+    "linkedin": "https://www.linkedin.com/in/silin-meng/",
+    "scholar": "https://scholar.google.com/citations?user=wJdoPLsAAAAJ&hl=en",
+    "original_cv": "https://www.overleaf.com/read/qcqbcbdfrcyz#30a8d2"
+  },
+  "experience": [
+    {
+      "organization": "Boson AI",
+      "role": "Member of Technical Staff — Modeling",
+      "start": "2025-03",
+      "end": null
+    },
+    {
+      "organization": "Boson AI",
+      "role": "Machine Learning Intern — Modeling",
+      "start": "2024-08",
+      "end": "2025-03"
+    },
+    {
+      "organization": "UCLA Computer Science",
+      "role": "Master Researcher",
+      "start": "2023-10",
+      "end": "2024-12"
+    }
+  ],
+  "education": [
+    {
+      "organization": "University of California, Los Angeles",
+      "degree": "Master of Science, Computer Science",
+      "start": "2023-09",
+      "end": "2025-06"
+    },
+    {
+      "organization": "San José State University",
+      "degree": "Bachelor of Science, Computer Science",
+      "start": "2019-05",
+      "end": "2023-05"
+    }
+  ]
+}
