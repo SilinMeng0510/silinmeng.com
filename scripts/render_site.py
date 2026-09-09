@@ -143,6 +143,11 @@ def section(title, identity, number, content, extra=''):
     </section>'''
 
 
+def asset_url(root, relative):
+    version = hashlib.sha256((root / relative).read_bytes()).hexdigest()[:12]
+    return f'./{relative}?v={version}'
+
+
 def render(root=ROOT):
     profile = json.loads((root / 'data/profile.json').read_text())
     publications = json.loads((root / 'data/publications.json').read_text())
@@ -155,6 +160,7 @@ def render(root=ROOT):
     ) + '<a href="./cv.html">CV <span aria-hidden="true">↗</span></a></nav>'
     research_source = f'<p class="source-link"><a href="{safe_url(publications["source_url"])}">Google Scholar {ARROW}</a></p>'
     index = Template((root / 'templates/index.html').read_text()).substitute(
+        main_css=asset_url(root, 'dist/css/main.css'),
         email=text(profile['email']), description=text(profile['summary']),
         intro=f'<p class="intro-note">{text(profile["headline"])}<br />{text(profile["focus"])}</p>',
         profile_links=profile_links,
@@ -163,6 +169,9 @@ def render(root=ROOT):
         education=section('Education', 'education', '04', education_html(profile)),
     )
     cv = Template((root / 'templates/cv.html').read_text()).substitute(
+        main_css=asset_url(root, 'dist/css/main.css'),
+        cv_css=asset_url(root, 'dist/css/cv.css'),
+        cv_js=asset_url(root, 'dist/js/cv.js'),
         name=text(profile['name']), email=text(profile['email']), summary=text(profile['summary']),
         linkedin=safe_url(links['linkedin']), scholar=safe_url(links['scholar']), github=safe_url(links['github']),
         experience=experience_html(profile, cv=True),

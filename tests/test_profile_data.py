@@ -1,13 +1,16 @@
 from copy import deepcopy
 import json
 from pathlib import Path
+import re
+import shutil
 import sys
+from tempfile import TemporaryDirectory
 import unittest
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / 'scripts'))
 
-from render_site import papers_html, safe_url, validate_profile, validate_publications
+from render_site import papers_html, render, safe_url, validate_profile, validate_publications
 from update_publications import merge_publications
 
 
@@ -85,6 +88,27 @@ class ProfileDataTests(unittest.TestCase):
         self.profile['experience_approval']['status'] = 'pending'
         with self.assertRaises(ValueError):
             validate_profile(self.profile)
+
+    def test_css_changes_refresh_both_pages_without_churning_other_assets(self):
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            for folder in ('data', 'templates', 'dist'):
+                shutil.copytree(ROOT / folder, root / folder)
+            render(root)
+
+            def assets(page):
+                return re.findall(r'(?:href|src)="(\./dist/[^\"]+)"', (root / page).read_text())
+
+            before = {page: assets(page) for page in ('index.html', 'cv.html')}
+            self.assertIn('?v=', before['index.html'][0])
+            render(root)
+            self.assertEqual(before, {page: assets(page) for page in before})
+            stylesheet = root / 'dist/css/main.css'
+            stylesheet.write_text(stylesheet.read_text() + '\n/* A new stylesheet release. */\n')
+            render(root)
+            self.assertNotEqual(before['index.html'][0], assets('index.html')[0])
+            self.assertEqual(assets('index.html')[0], assets('cv.html')[0])
+            self.assertEqual(before['cv.html'][1:], assets('cv.html')[1:])
 
 
 if __name__ == '__main__':
