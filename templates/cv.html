@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>$name — Curriculum Vitae</title>
+    <meta name="description" content="$name. Experience, education, and publications." />
+    <meta name="color-scheme" content="light" />
+    <link rel="canonical" href="https://silinmeng.com/cv.html" />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./dist/css/main.css" />
+    <link rel="stylesheet" href="./dist/css/cv.css" />
+    <script src="./dist/js/cv.js" defer></script>
+  </head>
+  <body class="cv-page">
+    <nav class="cv-toolbar" aria-label="CV actions">
+      <a href="./index.html">← Home</a>
+      <button id="print-cv" type="button" hidden>Print / Save PDF</button>
+    </nav>
+    <main class="cv-document" id="cv">
+      <header class="cv-header">
+        <h1>$name</h1>
+        <p class="cv-summary">$summary</p>
+        <nav class="cv-contacts" aria-label="Contact and profiles">
+          <a href="mailto:$email">$email</a>
+          <a href="$scholar">Google Scholar</a>
+          <a href="$linkedin">LinkedIn</a>
+          <a href="$github">GitHub</a>
+        </nav>
+      </header>
+      <section class="cv-section" aria-labelledby="cv-experience"><h2 id="cv-experience">Experience</h2>$experience</section>
+      <section class="cv-section" aria-labelledby="cv-education"><h2 id="cv-education">Education</h2>$education</section>
+      <section class="cv-section" aria-labelledby="cv-publications"><h2 id="cv-publications">Publications</h2>$publications</section>
+    </main>
+    <footer class="cv-footer">
+      <span>Publication data updated <time datetime="$verified_on">$verified_on</time></span>
+      <a href="$scholar">Google Scholar ↗</a>
+    </footer>
+  </body>
+</html>
