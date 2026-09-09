@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "profile_id": "wJdoPLsAAAAJ",
+  "source_url": "https://scholar.google.com/citations?user=wJdoPLsAAAAJ&hl=en",
+  "verified_on": "2026-09-09",
+  "publications": [
+    {
+      "id": "wJdoPLsAAAAJ:Tyk-4Ss8FVUC",
+      "title": "Alignment Drift in Single-Model Speculative Decoding for ASR: Mechanism, Correction, and Cost",
+      "authors": [
+        "Xinyu Wang",
+        "Huapeng Zhou",
+        "Ziyu Zhao",
+        "Silin Meng",
+        "Ke Bai",
+        "Dongming Shen",
+        "Xiao-Wen Chang",
+        "Alex Smola"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.12703",
+      "evidence": [
+        "https://arxiv.org/abs/2608.12703"
+      ]
+    },
+    {
+      "id": "wJdoPLsAAAAJ:zYLM7Y9cAGgC",
+      "title": "Instruct-FD: Can Your Full-Duplex Speech System Follow Turn-Taking Instructions?",
+      "authors": [
+        "Yuzhi Tang",
+        "Wentao Ma",
+        "Xiling Zhao",
+        "Ahmad Salimi",
+        "Sepehr Harfi Moridani",
+        "Dongming Shen",
+        "Jixuan Wang",
+        "Abdulrahman Abdulrazzag",
+        "Murdock Aubry",
+        "Yu-Hua Chen",
+        "Daniel Lee",
+        "Jaewon Lee",
+        "Jonah Mackey",
+        "Silin Meng",
+        "Nicholas Stranges",
+        "Chenxu Xiong",
+        "Hao Yu",
+        "Yi Zhu",
+        "Mu Li",
+        "Alex Smola"
+      ],
+      "year": 2026,
+      "venue": "COLM",
+      "url": "https://arxiv.org/abs/2607.20460",
+      "evidence": [
+        "https://arxiv.org/abs/2607.20460",
+        "https://colm.eventhosts.cc/Conferences/2026/AcceptedPapers"
+      ]
+    },
+    {
+      "id": "wJdoPLsAAAAJ:IjCSPb-OGe4C",
+      "title": "TARQ: Tail-Aware Reconstruction Quantization for Rare-Word Robust Automatic Speech Recognition",
+      "authors": [
+        "Xinyu Wang",
+        "Ziyu Zhao",
+        "Ke Bai",
+        "Silin Meng",
+        "Dongming Shen",
+        "Xiao-Wen Chang",
+        "Yixuan He"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2605.27808",
+      "evidence": [
+        "https://arxiv.org/abs/2605.27808"
+      ]
+    },
+    {
+      "id": "wJdoPLsAAAAJ:UeHWp8X0CEIC",
+      "title": "Back to Basics: Revisiting ASR in the Age of Voice Agents",
+      "authors": [
+        "Geeyang Tay",
+        "Wentao Ma",
+        "Jaewon Lee",
+        "Yuzhi Tang",
+        "Daniel Lee",
+        "Weisu Yin",
+        "Dongming Shen",
+        "Silin Meng",
+        "Yi Zhu",
+        "Mu Li",
+        "Alex Smola"
+      ],
+      "year": 2026,
+      "venue": "COLM",
+      "url": "https://arxiv.org/abs/2603.25727",
+      "evidence": [
+        "https://arxiv.org/abs/2603.25727",
+        "https://colm.eventhosts.cc/Conferences/2026/AcceptedPapers"
+      ]
+    },
+    {
+      "id": "wJdoPLsAAAAJ:u-x6o8ySG0sC",
+      "title": "RPGBench: Evaluating Large Language Models as Role-Playing Game Engines",
+      "authors": [
+        "Pengfei Yu",
+        "Dongming Shen",
+        "Silin Meng",
+        "Jaewon Lee",
+        "Weisu Yin",
+        "Andrea Yaoyun Cui",
+        "Zhenlin Xu",
+        "Yi Zhu",
+        "Xingjian Shi",
+        "Mu Li",
+        "Alex Smola"
+      ],
+      "year": 2025,
+      "venue": "SEA Workshop at NeurIPS",
+      "url": "https://arxiv.org/abs/2502.00595",
+      "evidence": [
+        "https://arxiv.org/abs/2502.00595",
+        "https://openreview.net/pdf?id=rbJGbacBhM"
+      ]
+    },
+    {
+      "id": "wJdoPLsAAAAJ:d1gkVwhDpl0C",
+      "title": "LLM-A*: Large Language Model Enhanced Incremental Heuristic Search on Path Planning",
+      "authors": [
+        "Silin Meng",
+        "Yiwei Wang",
+        "Cheng-Fu Yang",
+        "Nanyun Peng",
+        "Kai-Wei Chang"
+      ],
+      "year": 2024,
+      "venue": "Findings of EMNLP",
+      "url": "https://aclanthology.org/2024.findings-emnlp.60/",
+      "project_url": "https://silinmeng0510.github.io/llm-astar/",
+      "evidence": [
+        "https://aclanthology.org/2024.findings-emnlp.60/",
+        "https://arxiv.org/abs/2407.02511"
+      ]
+    }
+  ]
+}
