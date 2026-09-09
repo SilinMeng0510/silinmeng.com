@@ -21,3 +21,9 @@ venv
 node_modules
 .sass-cache
 temp/
+
+# Generated static site package
+out/
+
+# Unapproved personal-profile proposals
+review/
