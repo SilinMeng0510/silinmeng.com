@@ -166,7 +166,7 @@ def render(root=ROOT):
         profile_links=profile_links,
         experience=section('Experience', 'experience', '01', experience_html(profile)),
         research=section('Research', 'research', '02', papers_html(publications), research_source),
-        education=section('Education', 'education', '04', education_html(profile)),
+        education=section('Education', 'education', '03', education_html(profile)),
     )
     cv = Template((root / 'templates/cv.html').read_text()).substitute(
         main_css=asset_url(root, 'dist/css/main.css'),
