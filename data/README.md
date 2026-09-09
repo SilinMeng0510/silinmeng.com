@@ -1,6 +1,6 @@
 # Profile sources and update policy
 
-`profile.json` is the user-approved career and education snapshot. The current experience selection is **Boson AI and UCLA only**, approved in this task on September 9, 2026. Do not restore other LinkedIn positions merely because they are visible on the source profile.
+`profile.json` is the user-approved career and education snapshot. The current experience selection is **Boson AI Member of Technical Staff and UCLA Master Researcher only**, approved in this task on September 9, 2026. The user explicitly excluded the Boson AI internship and removed the homepage Selected projects section. Do not restore internships, other LinkedIn positions, or the projects section during automatic updates.
 
 `publications.json` contains the six papers read from the user's specified [Google Scholar profile](https://scholar.google.com/citations?user=wJdoPLsAAAAJ&hl=en), with full author lists and links verified against arXiv, ACL Anthology, OpenReview, and the COLM accepted-paper list. The profile links back to silinmeng.com and identifies Silin Meng at Boson AI. The source URLs and Scholar article IDs are part of every future verification, not just a name-based search.
 

@@ -281,61 +281,17 @@ h1 {
   font-size: 0.875rem;
 }
 
-.project-list > li + li {
-  margin-top: 2.25rem;
-}
-
-.project {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 1.5rem;
-}
-
-.project h3 {
-  font-family: var(--serif);
-  font-size: 1.75rem;
-  font-weight: 400;
-  line-height: 1.25;
-  letter-spacing: -0.025em;
-}
-
-.project-content {
-  min-width: 0;
-  overflow-wrap: anywhere;
-}
-
-.project .entry-description {
-  margin-top: 0.5rem;
-}
-
-.project-meta {
-  display: block;
-  margin-top: 0.75rem;
-  color: var(--muted);
-  font-size: 0.8125rem;
-}
-
-.project-arrow {
-  flex-shrink: 0;
-  color: var(--faint);
-  font-size: 1.25rem;
-  transition: color 180ms ease, transform 180ms ease;
-}
-
-.project:hover .project-arrow {
-  color: var(--accent);
-  transform: translate(2px, -2px);
-}
-
 .education-list > li + li {
   margin-top: 1.75rem;
 }
 
-.education-list h3 {
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.5;
+.education-list .experience-title h3 {
+  font-family: var(--serif);
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.018em;
+  text-wrap: balance;
 }
 
 .education-list p {

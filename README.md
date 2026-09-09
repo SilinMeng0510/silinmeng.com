@@ -1,6 +1,6 @@
 # silinmeng.com
 
-Silin Meng's personal website: research, selected projects, experience, and a printable CV.
+Silin Meng's personal website: research, experience, and a printable CV.
 
 [Website](https://silinmeng.com/) · [CV](https://silinmeng.com/cv.html) · [Google Scholar](https://scholar.google.com/citations?user=wJdoPLsAAAAJ&hl=en)
 
@@ -29,7 +29,7 @@ data/
   publications.json        Verified publication records and source links
   README.md                Content verification and update policy
 templates/
-  index.html               Homepage template, including selected projects
+  index.html               Homepage template
   cv.html                  Printable CV template
 scripts/
   render_site.py           Data validation and HTML generation
@@ -46,9 +46,9 @@ out/                       Generated deployment package; ignored by Git
 
 ## Editing content
 
-Update `data/profile.json` for approved profile content and `data/publications.json` for verified publication records. Work experience currently includes Boson AI and UCLA.
+Update `data/profile.json` for approved profile content and `data/publications.json` for verified publication records. Work experience includes the Boson AI Member of Technical Staff role and UCLA research; internships are omitted.
 
-Edit the files in `templates/` for page structure and selected projects, and `dist/css/` for styling. Rebuild after changes rather than editing the generated root HTML files.
+Edit the files in `templates/` for page structure, and `dist/css/` for styling. Rebuild after changes rather than editing the generated root HTML files.
 
 ```sh
 python3 -m unittest discover -s tests
