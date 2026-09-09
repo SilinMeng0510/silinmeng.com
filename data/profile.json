@@ -10,8 +10,8 @@
   "experience_approval": {
     "status": "approved",
     "approved_on": "2026-09-09",
-    "scope": "Boson AI and UCLA only",
-    "sha256": "d874555b113cad73b742a0441cdfc99f0cd8b78a210891c731d85439e7ce2b4d"
+    "scope": "Boson AI Member of Technical Staff and UCLA Master Researcher only; internships excluded",
+    "sha256": "e0d097d54a28feef668cb0ca6acf3039c9aad65b7dd0884637d1d5c1b8c48c88"
   },
   "links": {
     "github": "https://github.com/SilinMeng0510",
@@ -25,12 +25,6 @@
       "role": "Member of Technical Staff — Modeling",
       "start": "2025-03",
       "end": null
-    },
-    {
-      "organization": "Boson AI",
-      "role": "Machine Learning Intern — Modeling",
-      "start": "2024-08",
-      "end": "2025-03"
     },
     {
       "organization": "UCLA Computer Science",
